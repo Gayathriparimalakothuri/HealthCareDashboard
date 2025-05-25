@@ -1,23 +1,24 @@
 const healthIndicators = [
   {
-    name: 'Heart',
-    status: 'Healthy',
-    color: '#4CAF50', // green
-  },
-  {
+    image:'/models/lungs.jpg',
     name: 'Lungs',
     status: 'Needs Checkup',
-    color: '#FFC107', // yellow
+    color: '#d92233', // Orange
+    date:'26/10/2021',
   },
   {
-    name: 'Brain',
+    image: '/models/tooth.jpg',
+    name:' Teeth',
     status: 'Healthy',
-    color: '#4CAF50',
+    color: '#57b9d9',
+    date:'26/10/2021',
   },
   {
-    name: 'Kidneys',
+    image: '/models/bone.jpg',
+    name: 'Bone',
     status: 'Critical',
-    color: '#F44336', // red
+    color: '#e35e10', 
+    date:'26/10/2021',
   },
 ];
 

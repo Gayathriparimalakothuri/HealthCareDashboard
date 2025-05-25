@@ -5,7 +5,7 @@ import { faGear } from '@fortawesome/free-solid-svg-icons';
 
 const SideBar = () => {
     return (
-        <div className='sidebar card'>
+        <div className='sidebar card w-100'>
             <h4><span style={{ color: '#07e9d6' }}>Health</span>care.</h4>
             <div className='flex-grow-1 mt-3'>
                 {navigationLinks.map((section, idx) => (
