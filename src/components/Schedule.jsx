@@ -9,7 +9,7 @@ const Schedule = () => {
 
     //Rendering the schedule component with calendar and appointments
     return (
-        <div className='card bg-blue p-3 h-100 appointments' >
+        <div className='card bg-blue p-3  appointments' >
             <div className='d-flex justify-content-end align-items-center mb-4'>
                 <div className='mx-2'>
                     <img

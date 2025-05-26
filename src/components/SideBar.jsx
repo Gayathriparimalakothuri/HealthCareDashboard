@@ -6,7 +6,7 @@ import { faGear } from '@fortawesome/free-solid-svg-icons';
 const SideBar = () => {
     // Rendering the sidebar menus using the mock navigation data
     return (
-        <div className='sidebar card w-100'>
+        <div className='sidebar  card w-100' style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
             <h4><span style={{ color: '#07e9d6' }}>Health</span>care.</h4>
             <div className='flex-grow-1 mt-3'>
                 {navigationMenu?.map((section, idx) => (
