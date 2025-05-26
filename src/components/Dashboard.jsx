@@ -19,7 +19,7 @@ const data = [
 ];
 const Dashboard = () => {
     return (
-        <div className='mt-4' style={{ overflowX: 'auto' }}>
+        <div className='mt-4' >
             <div className='d-flex justify-content-between align-items-center mb-4'>
                 <div className="input-group">
                     <span className="input-group-text">
