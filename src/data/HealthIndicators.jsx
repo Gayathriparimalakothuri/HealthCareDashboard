@@ -1,9 +1,10 @@
+//Mock data for health indicators
 const healthIndicators = [
   {
     image:'/models/lungs.jpg',
     name: 'Lungs',
     status: 'Needs Checkup',
-    color: '#d92233', // Orange
+    color: '#d92233', 
     date:'26/10/2021',
   },
   {

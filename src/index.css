@@ -11,7 +11,13 @@ body,
 #root {
   max-width: unset !important;
 }
+.bg-blue {
+  background-color: #e1f0f587 !important;
+  border-color: transparent !important;
+  border-radius: 20px !important;
+}
 
+ /* .............................Styles for sidebar..............................*/
 .app {
   display: flex;
   flex-direction: column;
@@ -41,25 +47,20 @@ body,
   border-bottom-right-radius: 0 !important;
 }
 
+/*....................Styles for dashboard component..............................*/
 .input-group-text {
   background-color: unset !important;
 }
 
-.bg-blue {
-  background-color: #e1f0f587 !important;
-  border-color: transparent !important;
-  border-radius: 20px !important;
-}
 .indicator-name {
   overflow-wrap: break-word;
   word-break: break-word;
   white-space: normal;
-  flex: 1; /* Allow text to use remaining space */
+  flex: 1; 
 }
 
 
-
-/*...................................................*/
+/*.......................Calendar & schedule Components............................*/
 
 .calendar-container {
   max-width: 100%;

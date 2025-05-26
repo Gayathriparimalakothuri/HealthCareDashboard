@@ -1,14 +1,15 @@
 import React from 'react'
-import { navigationLinks } from '../data/NavigationData';
+import { navigationMenu } from '../data/NavigationData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 
 const SideBar = () => {
+    // Rendering the sidebar menus using the mock navigation data
     return (
         <div className='sidebar card w-100'>
             <h4><span style={{ color: '#07e9d6' }}>Health</span>care.</h4>
             <div className='flex-grow-1 mt-3'>
-                {navigationLinks.map((section, idx) => (
+                {navigationMenu?.map((section, idx) => (
                     <div key={idx}>
                         <h6 className='d-flex align-items-start text-secondary'>{section.category}</h6>
                         <ul className='ps-0'>

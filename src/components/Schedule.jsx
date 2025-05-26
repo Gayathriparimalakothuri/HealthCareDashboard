@@ -7,7 +7,7 @@ import appointments from '../data/AppoitmentData';
 import upcomingSchedule from '../data/UpcomingSchedule';
 const Schedule = () => {
 
-
+    //Rendering the schedule component with calendar and appointments
     return (
         <div className='card bg-blue p-3 h-100 appointments' >
             <div className='d-flex justify-content-end align-items-center mb-4'>
@@ -37,18 +37,14 @@ const Schedule = () => {
                             </div>
                             <p className="text-start m-0">{appointment.appointmentTime}</p>
                             <p className="text-start text-break" >{appointment.doctorName}</p>
-
-
                         </div>
                     </div>
-
                 ))}
             </div>
 
             <div className="row mt-4 ">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h6 className='text-start'>The Upcoming Schedule</h6>
-
                     {Object.entries(upcomingSchedule).map(([day, appointments]) => (
                         <div key={day} className='row my-3'>
                             <span className='text-start'>{day}</span>
@@ -70,7 +66,6 @@ const Schedule = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 

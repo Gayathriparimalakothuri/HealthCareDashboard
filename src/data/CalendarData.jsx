@@ -1,3 +1,4 @@
+// Mock data for a calendarUI component
 const mockCalendar = {
     month: 'October 2021',
     days: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],

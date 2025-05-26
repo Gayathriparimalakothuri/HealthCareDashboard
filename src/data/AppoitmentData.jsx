@@ -1,3 +1,4 @@
+// Mock data for appointments
 const appointments = [
   {
     doctorName: 'Dr.Cameron Williamson',
@@ -9,7 +10,6 @@ const appointments = [
     doctorName: 'Dr. Kavin Djones',
     appointmentTime: '10:00-11:00',
     type: 'Physiotherapy Appointment',
-    // image: '/models/physiotheraphy.png',
     image:'💪🏻'
   },
  

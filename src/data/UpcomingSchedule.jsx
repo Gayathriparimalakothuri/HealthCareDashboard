@@ -1,3 +1,5 @@
+// Mock data for a upcoming scheduled appointments 
+
 const upcomingSchedule = {
   "On Thursday": [
     {  type:'Health checkup complete', time: '11:00 ',icon:'💉' },

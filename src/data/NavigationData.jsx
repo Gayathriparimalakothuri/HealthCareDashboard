@@ -1,6 +1,7 @@
-import { faHome, faCalendarCheck, faChartBar, faNotesMedical, faComments, faLifeRing, faCog, faListUl, faCalendarPlus, faSquarePlus, faChartLine, faPhone, faCommentDots, faGrip } from '@fortawesome/free-solid-svg-icons';
+import { faListUl, faCalendarPlus, faSquarePlus, faChartLine, faPhone, faCommentDots, faGrip } from '@fortawesome/free-solid-svg-icons';
 
-const navigationLinks = [
+// Mock data for navigation links and bottom links
+const navigationMenu = [
   {
     category: 'General',
     items: [
@@ -20,8 +21,6 @@ const navigationLinks = [
   },
 ];
 
-const bottomLinks = [
-  { label: 'Settings', icon: '⚙️' },
-];
 
-export { navigationLinks, bottomLinks };
+
+export  default  navigationMenu  ;
