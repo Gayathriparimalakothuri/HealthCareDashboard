@@ -1,25 +1,18 @@
 const appointments = [
   {
-    patientName: 'Samuel Green',
-    appointmentTime: '09:00 AM',
-    type: 'General Checkup',
-    status: 'Confirmed',
-    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    doctorName: 'Dr.Cameron Williamson',
+    appointmentTime: '09:00-10:00',
+    type: 'Dentist',
+    image: '🦷',
   },
   {
-    patientName: 'Jessica Blue',
-    appointmentTime: '10:30 AM',
-    type: 'Cardiology',
-    status: 'Pending',
-    avatar: 'https://randomuser.me/api/portraits/women/45.jpg',
+    doctorName: 'Dr. Kavin Djones',
+    appointmentTime: '10:00-11:00',
+    type: 'Physiotherapy Appointment',
+    // image: '/models/physiotheraphy.png',
+    image:'💪🏻'
   },
-  {
-    patientName: 'Mark Brown',
-    appointmentTime: '12:00 PM',
-    type: 'X-ray',
-    status: 'Cancelled',
-    avatar: 'https://randomuser.me/api/portraits/men/29.jpg',
-  },
+ 
 ];
 
 export default appointments;

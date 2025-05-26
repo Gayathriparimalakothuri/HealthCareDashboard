@@ -15,19 +15,19 @@ const data = [
 
 const ActivityChart = () => {
     return (
-        <div className="card p-1 mt-4 mx-2">
-            <div className="d-flex justify-content-between align-items-center mb-3">
+        <div className="card bg-blue p-1 mt-4 mx-3">
+            <div className="d-flex justify-content-between align-items-center mb-3 px-3">
                 <h6>Activity</h6>
                 <p className="text-muted" style={{ fontSize: '12px' }}>3 appointments this week</p>
             </div>
-            <ResponsiveContainer width="100%" height={150}>
+            <ResponsiveContainer  height={150}>
                 <BarChart data={data}>
                     <XAxis dataKey="day" axisLine={false} tickLine={false} />
                     <YAxis hide />
                     <Tooltip />
-                    <Bar dataKey="appt1" fill="#00E0FF" barSize={6} radius={[10, 10, 0, 0]} />
-                    <Bar dataKey="appt2" fill="#A1A1A1" barSize={6} radius={[10, 10, 0, 0]} />
-                    <Bar dataKey="appt3" fill="#6A5ACD" barSize={6} radius={[10, 10, 0, 0]} />
+                    <Bar dataKey="appt1" fill="#00E0FF" barSize={4} radius={[10, 10, 0, 0]} />
+                    <Bar dataKey="appt2" fill="#A1A1A1" barSize={4} radius={[10, 10, 0, 0]} />
+                    <Bar dataKey="appt3" fill="#6A5ACD" barSize={4} radius={[10, 10, 0, 0]} />
                 </BarChart>
             </ResponsiveContainer>
         </div>
