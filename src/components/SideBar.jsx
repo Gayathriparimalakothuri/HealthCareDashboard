@@ -1,5 +1,5 @@
 import React from 'react'
-import { navigationMenu } from '../data/NavigationData';
+import  navigationMenu  from '../data/NavigationData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 
