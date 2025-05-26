@@ -7,7 +7,7 @@ import { useLoader } from '@react-three/fiber'
 function HumanModel() {
   const model = useLoader(GLTFLoader, '/models/HumanAnatomy.glb') 
 
-  return <primitive object={model.scene} scale={[3, 3.8, 2]} // Increase model size
+  return <primitive object={model.scene} scale={[3, 3.8, 2]} 
       position={[0, 0, 0]} />
 }
 
@@ -18,7 +18,6 @@ function Anatomy() {
       <directionalLight position={[10, 10, 5]} intensity={1} />
       <HumanModel />
 
-      {/* Zoom / Rotate Controls */}
       <OrbitControls enableZoom={true} />
 
     </Canvas>

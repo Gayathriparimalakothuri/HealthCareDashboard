@@ -1,11 +1,8 @@
-import { faArrowDown, faArrowRight, faBell, faChevronDown, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faBell, faChevronDown, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Button } from 'bootstrap'
-import React from 'react'
 import Anatomy from './Anatomy';
 import healthIndicators from '../data/HealthIndicators';
 import { ProgressBar } from 'react-bootstrap';
-import ActivityChart from './ActivityChart';
 import {
     BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer
 } from 'recharts';
@@ -54,7 +51,7 @@ const Dashboard = () => {
                                             <span className=' text-dark ms-2' >{indicator.name}</span>
                                         </div>
                                         <p className=' text-start text-secondary pt-2'> Date:{indicator.date}</p>
-                                        {/* <ProgressBar  now={70} style={{height:'10px',backgroundColor:`${indicator.color}`}}/> */}
+                                        
                                         <ProgressBar
                                             now={70}
                                             style={{ backgroundColor: '#e0e0e0', height: '10px', marginTop: '5px' }}
@@ -75,7 +72,6 @@ const Dashboard = () => {
             </div>
 
             <div className="row">
-                {/* <ActivityChart/> */}
                  <div className=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 card bg-blue p-1 mt-4 mx-0">
                             <div className="d-flex justify-content-between align-items-center mb-3 px-1">
                                 <h6>Activity</h6>

@@ -1,5 +1,4 @@
 import React from 'react';
-// import './CalendarUI.css';
 import mockCalendar from '../data/CalendarData';
 const CalendarUI = () => {
   

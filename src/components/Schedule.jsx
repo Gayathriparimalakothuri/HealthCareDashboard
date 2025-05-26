@@ -1,12 +1,9 @@
 import React from 'react';
-// import './CalendarUI.css';
-import mockCalendar from '../data/CalendarData';
 import CalendarUI from './Calender';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+import {  faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 import userIcon from '../assets/adventurer.svg';
 import appointments from '../data/AppoitmentData';
-import { div } from 'three/tsl';
 import upcomingSchedule from '../data/UpcomingSchedule';
 const Schedule = () => {
 

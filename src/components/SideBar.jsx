@@ -23,7 +23,6 @@ const SideBar = () => {
                 ))}
             </div>
 
-            {/* <div className='mt-auto d-flex justify-content-start align-items-center text-secondary '> */}
             <div className='mt-auto d-flex justify-content-start align-items-center text-secondary '>
                 <FontAwesomeIcon icon={faGear} className='me-3' /> <h6>Settings</h6>
             </div>
