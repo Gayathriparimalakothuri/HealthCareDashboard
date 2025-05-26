@@ -28,13 +28,13 @@ const Dashboard = () => {
                     <input type="text" className="form-control" placeholder="Search..."  disabled/>
                 </div>
                 <button className='ms-3' style={{ backgroundColor: 'transparent', borderColor: '#dee2e6', }} disabled>
-                    <FontAwesomeIcon icon={faBell} style={{ color: 'blueViolet' }} />
+                    <FontAwesomeIcon icon={faBell} style={{ color: '#330da1' }} />
                 </button>
             </div>
 
             <div className='d-flex justify-content-between align-items-center mb-4'>
                 <h4 className='text-dark'>Dashboard</h4>
-                <p><span style={{ color: 'blueViolet' }}>This Week  </span><FontAwesomeIcon icon={faChevronDown} style={{ color: 'gray' }} /></p>
+                <p><span style={{ color: '#330da1' }}>This Week  </span><FontAwesomeIcon icon={faChevronDown} style={{ color: 'gray' }} /></p>
             </div>
             {/**Dashboard Part -> Anatomy + Health Indicators */}
             <div className="row">

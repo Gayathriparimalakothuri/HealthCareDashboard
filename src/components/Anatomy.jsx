@@ -15,7 +15,7 @@ function HumanModel() {
 // function to display the human anatomy model in a canvas
 function Anatomy() {
   return (
-    <Canvas style={{ height: '100%' }}>
+    <Canvas style={{ width: '100%', height: '400px' }} resize={{ scroll: false }}>
       <ambientLight intensity={0.5} />
       <directionalLight position={[10, 10, 5]} intensity={1} />
       <HumanModel />
