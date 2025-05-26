@@ -1,7 +1,7 @@
 import React from 'react';
 import CalendarUI from './Calender';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 import userIcon from '../assets/adventurer.svg';
 import appointments from '../data/AppoitmentData';
 import upcomingSchedule from '../data/UpcomingSchedule';
@@ -29,11 +29,11 @@ const Schedule = () => {
             </div>
             <div className="row">
                 {appointments.map((appointment, index) => (
-                    <div className="col-auto p-0">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 p-0">
                         <div className={`card ${appointment.type === "Dentist" ? "schedule" : "bg-shaded"} p-2 m-1`} key={index} style={{ borderRadius: '20px', }}>
                             <div className='d-flex justify-content-between align-items-center'>
-                                <span className={` ${appointment.type !== "Dentist" && "fw-bold"} text-break`}  style={{ maxWidth: "90%" }}>{appointment.type}</span>
-                                <span className='ms-1' style={{"fontSize": '28px'}}>{appointment.image}</span>
+                                <span className={` ${appointment.type !== "Dentist" && "fw-bold"} text-break`} style={{ maxWidth: "90%" }}>{appointment.type}</span>
+                                <span className='ms-1' style={{ "fontSize": '28px' }}>{appointment.image}</span>
                             </div>
                             <p className="text-start m-0">{appointment.appointmentTime}</p>
                             <p className="text-start text-break" >{appointment.doctorName}</p>
@@ -45,7 +45,7 @@ const Schedule = () => {
                 ))}
             </div>
 
-            <div className="row mt-4 ms-2">
+            <div className="row mt-4 ">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h6 className='text-start'>The Upcoming Schedule</h6>
 
@@ -53,10 +53,14 @@ const Schedule = () => {
                         <div key={day} className='row my-3'>
                             <span className='text-start'>{day}</span>
                             {appointments.map((appointment, index) => (
-                                <div className="card col-auto bg-shaded p-3 m-2" key={index} style={{ borderRadius: '20px' }}>
+                                <div className="card col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5 bg-shaded p-2 m-1" key={index} style={{ borderRadius: '20px' }}>
                                     <div className='d-flex justify-content-between align-items-center'>
-                                        <span className='font-weight-bold'>{appointment.type}</span>
-                                        <span className='ms-4'style={{"fontSize": '20px'}}>{appointment.icon}</span>
+                                        <span className='font-weight-bold' style={{
+                                            maxWidth: "75%",
+                                            wordBreak: "break-word",
+                                            overflowWrap: "break-word",
+                                        }}>{appointment.type}</span>
+                                        <span className='ms-4' style={{ "fontSize": '20px' }}>{appointment.icon}</span>
                                     </div>
                                     <p className="text-start">{appointment.time}</p>
                                 </div>

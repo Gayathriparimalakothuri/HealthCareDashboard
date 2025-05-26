@@ -4,7 +4,8 @@ body,
   height: 100%;
   margin: 0 !important;
   padding: 0 !important;
-  /* overflow: auto; */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #root {
@@ -35,7 +36,6 @@ body,
   background-color: #e1f0f587 !important;
   border-color: transparent !important;
   border-top-left-radius: 30px !important;
-  /* radius on top-left corner */
   border-bottom-left-radius: 30px !important;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
@@ -56,7 +56,7 @@ body,
 /*...................................................*/
 
 .calendar-container {
-  max-width: 700px;
+  max-width: 100%;
   margin: 30px auto;
   padding: 20px;
   border-radius: 10px;
@@ -86,7 +86,6 @@ body,
   grid-template-columns: repeat(7, 1fr);
   gap: 8px;
 }
-
 .day-label,
 .date-label {
   text-align: center;
@@ -108,7 +107,6 @@ body,
   text-align: center;
   padding: 8px 0;
   margin: 4px 0;
-  background-color: #fff;
   border-radius: 20px;
   font-size: 14px;
   color: #444;
@@ -116,16 +114,16 @@ body,
 }
 
 .highlight {
-  background-color: #e4e2fc;
-  color: #5f4dee;
+  background-color: #5f4dee;
+  color: #fdf9f9;
 }
 
 .appointments {
   border-top-right-radius: 30px !important;
-  /* radius on top-left corner */
   border-bottom-right-radius: 30px !important;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
+  overflow-x: auto;
 }
 
 .schedule {

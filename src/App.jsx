@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
