@@ -18,7 +18,7 @@ const data = [
 ];
 const Dashboard = () => {
     return (
-        <div className='mt-4'>
+        <div className='mt-4' style={{overflowX:'auto'}}>
             <div className='d-flex justify-content-between align-items-center mb-4'>
                 <div className="input-group">
                     <span className="input-group-text">
@@ -41,7 +41,7 @@ const Dashboard = () => {
                         <Anatomy />
                     </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-5 col-xs-5 ms-3">
+                {/* <div className="col-lg-4 col-md-4 col-sm-5 col-xs-5 ms-3" style={{ content:'',minWidth:'110px'}}>
                     <div className="row">
                             {healthIndicators.map((indicator, index) => (
                                 <div key={index} className=" card-body d-flex justify-content-between align-items-center mb-3">
@@ -68,11 +68,39 @@ const Dashboard = () => {
                             ))}
                             <span className='d-flex justify-content-end'>Details <FontAwesomeIcon icon={faArrowRight} /></span>
                     </div>
-                </div>
+                </div> */}
+
+                <div className="col-lg-4 col-md-4 col-sm-5 col-xs-5 ms-3" style={{ minWidth: '110px' }}>
+  <div className="row">
+    {healthIndicators.map((indicator, index) => (
+      <div key={index} className="card-body d-flex justify-content-between align-items-center mb-3">
+        <div className="card bg-blue p-4" style={{ width: '100%' }}>
+          <div className='d-flex justify-content-start align-items-center'>
+            <img src={indicator.image} alt={indicator.name} className='img-fluid float-start' style={{ width: '40px', height: '35px', borderRadius: '50%' }} />
+            <span className='text-dark ms-2 indicator-name'>{indicator.name}</span>
+          </div>
+          <p className='text-start text-secondary pt-2'>Date: {indicator.date}</p>
+
+          <ProgressBar
+            now={70}
+            style={{ backgroundColor: '#e0e0e0', height: '10px', marginTop: '5px' }}
+          >
+            <ProgressBar
+              now={70}
+              style={{ backgroundColor: indicator.color }}
+            />
+          </ProgressBar>
+        </div>
+      </div>
+    ))}
+    <span className='d-flex justify-content-end'>Details <FontAwesomeIcon icon={faArrowRight} /></span>
+  </div>
+</div>
+
             </div>
 
             <div className="row">
-                 <div className=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 card bg-blue p-1 mt-4 mx-0">
+                 <div className=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 card bg-blue p-2 mt-4 mx-0">
                             <div className="d-flex justify-content-between align-items-center mb-3 px-1">
                                 <h6>Activity</h6>
                                 <p className="text-muted" style={{ fontSize: '12px' }}>3 appointments this week</p>

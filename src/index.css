@@ -50,6 +50,12 @@ body,
   border-color: transparent !important;
   border-radius: 20px !important;
 }
+.indicator-name {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  flex: 1; /* Allow text to use remaining space */
+}
 
 
 
